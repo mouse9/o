@@ -1,0 +1,74 @@
+<html>
+	<head>
+		<title> Offers Club </title>
+		<!-- link google css file for better angular class like class = "md-primary || md-warn" -->
+		<link rel="stylesheet" href="google/angular-material.css">
+
+		<!-- link a new css file which is having icons and some fonts in it -->
+ 		<link href="google/ionicCopy.min.css" media="all" rel="stylesheet" type="text/css" />
+
+		<!-- my own css file -->
+		<link rel="Stylesheet" type="text/css" href="my.css">
+
+
+		<!-- meta tag it is used for many reasons here i have used it for for setting the screen to fix width and for proper layout -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1" />
+
+
+		<!-- this wil tell if the app is capable in apple or not (>????????????????????????????)-->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+
+		<!-- same for other mobile (different os)-->
+		<meta name="mobile-web-app-capable" content="yes" />
+
+		<!-- all icons -->
+		<link rel="apple-touch-icon" sizes="256*256" href="icons/x.png" />
+		<link rel="apple-touch-icon" sizes="16*16" href="icons/16.ico" />
+		<link rel="apple-touch-icon" sizes="24*24" href="icons/24.ico" />
+		<link rel="apple-touch-icon" sizes="32*32" href="icons/32.ico" />
+		<link rel="apple-touch-icon" sizes="48*48" href="icons/48.ico" />
+		<link rel="apple-touch-icon" sizes="64*64" href="icons/64.png" />
+		<link rel="apple-touch-icon" sizes="72*72" href="icons/72.png" />
+		<link rel="apple-touch-icon" sizes="128*128" href="icons/128.ico" />
+		<link rel="apple-touch-icon" sizes="192*192" href="icons/192.ico" />
+
+		<!-- change status bar theme -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="theme-color" content="#303a41">
+
+
+		<!-- menifest -->
+		<link rel="manifest" href="maniFinal.json"/>
+		<link rel="stylesheet" href="my.css"/>
+		<link rel="stylesheet" href="reg.css"/>
+		<link rel="stylesheet" href="shrinkCopy.css"/>
+
+
+
+
+	</head>
+        <body ng-app="of" class="md-background">
+            <div ng-controller="check">
+                <md-input-container class="md-primary">
+                    <label for="Name" style="color: #01579b">Name</label>
+                    <input type="text" ng-model="abc.name"></input>
+                </md-input-container>
+                <md-input-container>
+                    <label for="Password">Password</label>
+                    <input type="password" ng-model="abc.pass"></input>
+                </md-input-container>
+                <md-button class="md-warn md-primary" ng-click="go()">Done</md-button>
+              </div>
+	
+		<script src="google/angular.min.js"></script>
+		<script src="google/angular-animate.min.js"></script>
+		<script src="google/angular-aria.min.js"></script>
+		<script src="google/angular-messages.min.js"></script>
+		<script src="google/angular-material.min.js"></script>	
+		<script src="google/angular-route.min.js"></script>
+		<script src="google/angular-cookies.min.js"></script>
+		<script type="text/javascript" src="google/ng-file-upload.min.js"></script>
+		<script type="text/javascript" src="google/ng-file-upload-shim.min.js"></script>
+		<script src="final.js"></script>
+	</body>
+</html> 	
